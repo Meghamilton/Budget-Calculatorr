@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penny Wise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="row" style="background-image: url(./bgc.webp);background-size: cover; background-position: relative; background-position: center; height: 585px; width: 100%;">
+    <div class="card mt-5 border-primary" style="width: 80rem; position: absolute;">
+        <div class="card-body">
+          <h5 class="card-title text-center text-primary">Budget Calculator</h5>
+          <p class="card-text text-primary" id="wel"><i class="fa-solid fa-user" style="color: #3f0df3;"></i> </p>
+         <div class="card-text text-primary">
+            <input type="number" placeholder="Total Income in Rupees" id="tin">
+            <input type="number" placeholder="Rent paid in Rupees" id="rent">
+            <input type="number" placeholder="Groceries amount in Rupees" id="groc">
+            <input type="number" placeholder="Transportation amount in Rupees" id="trans">
+            <input type="number" placeholder="Entertainment amount in Rupees" id="enter">
+            <input type="number" placeholder="Other expenses amount in Rupees" id="exp">
+            <textarea class="form-control mt-3" placeholder="Balance amount : " id="balance"></textarea>
+            <button class="btn btn-primary mt-3" onclick="calcu()">CHECK</button>
+        </div>
+          <a href="./login.html" class="btn btn-outline-primary mt-3">LOGOUT</a>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
